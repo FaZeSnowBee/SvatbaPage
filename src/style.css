@@ -62,9 +62,26 @@
     text-align: center;
   }
   
-  .stodola-img{
+  .googlephotos {
+    filter: none;
+    background-color: #fdd613; /* Add a background color */
+    color: #000; /* Change text color for better contrast */
+    padding: 0.2em 0.5em; /* Add some padding */
+    border-radius: 5px; /* Add rounded corners */
+    font-weight: bold; /* Make the text bold */
+    display: inline-flex; /* Align icon and text */
+    align-items: center; /* Center align icon and text */
+}
+
+.googlephotos::before {
+    content: url('path/to/google-photos-icon.png'); /* Add an icon before the text */
+    margin-right: 0.5em; /* Add some space between icon and text */
+}
+
+  .googlephotos:hover,
+  .googlephotos:visited:hover {
+      filter: drop-shadow(0 0 0.5em rgba(253, 214, 19, 1)) drop-shadow(0 0 1em rgba(253, 214, 19, 0.7));
   }
-  
 
   .mirrored-image {
     transform: scaleX(-1);
@@ -79,6 +96,9 @@
     top: 0;
   }
 
+  .logo{
+    z-index: 1000;
+  }
   @media (max-width: 575px) {
     .mobile-text {
       line-height: 1.5;
@@ -196,7 +216,8 @@
   }
   
   /* FONT */
-  
+
+
   .font-400{
     line-height: 10px;
     font-family: "Berkshire Swash", serif;
@@ -271,6 +292,7 @@
     line-height: 30px;
   }
 
+
   option{
     line-height: 10px;
     font-family: "Berkshire Swash", serif;
@@ -284,7 +306,7 @@
     height: 200px; /* Adjust as needed */
     overflow: hidden;
   }
-
+    
   .img-marcel{
     width: 100%;
     height: 100%;
@@ -715,6 +737,12 @@
       padding-right: 0 !important;
       margin: 0 !important;
       
+    }
+  }
+
+  @media (max-width: 575px) {
+    .content-main {
+      padding-top: 35px ;
     }
   }
 
