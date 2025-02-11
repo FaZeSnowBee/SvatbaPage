@@ -1,0 +1,22 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          submodules: false  # Disable submodules
+
+      - name: Build and deploy
+        run: |
+          # Build your site (you can replace this with your actual build commands)
+          echo "Deploying site to GitHub Pages"
+          # Example commands to deploy, you can customize it for your setup
+          git push origin main
