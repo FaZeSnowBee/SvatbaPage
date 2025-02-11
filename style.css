@@ -38,7 +38,7 @@
     min-height: 100vh;
     overflow-x: hidden;
     z-index: -1;
-    
+    overflow-x
     background: transparent;
     /* background: #0881a3; */
     background: rgb(255,184,182);
@@ -127,6 +127,43 @@
     padding: 20px;
     background-color: #fff;
   }
+
+  @media (max-width: 575px) {
+    .lace-bordered-div {
+      border: 0px; 
+    }
+  }
+
+  @media (max-width: 575px) {
+    .logo-container {
+      top: 34px;
+      
+    }
+  }
+
+  @media (width: 375px) {
+    .logo-container {
+      top: 34px;  /* Example change at 375px width */
+      left: 27px;
+    }
+  }
+
+  @media (width: 320px) {
+    .logo-container {
+      top: 34px;  /* Example change at 320px width */
+      left: 0px;
+    }
+  }
+  @media (width: 425px) {
+    .logo-container {
+      top: 34px;  /* Example change at 425px width */
+      left: 51px;
+    }
+  }
+
+
+
+
   
   /* Apply the filter only to the border */
   .lace-bordered-div::before,
@@ -742,7 +779,7 @@
 
   @media (max-width: 575px) {
     .content-main {
-      padding-top: 35px ;
+      padding-top: 50px ;
     }
   }
 
@@ -963,7 +1000,7 @@
     margin: auto;
     position: relative;
     overflow: hidden;
-    z-index: 10;
+    z-index: 0;
 }
 .slider .list{
     position: absolute;
