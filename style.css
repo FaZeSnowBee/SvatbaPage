@@ -1119,3 +1119,12 @@
   .footer-container{
     background: white;
   }
+
+    /* UBYTOVANI */
+
+  .ubytovani-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
